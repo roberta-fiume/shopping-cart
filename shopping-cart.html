@@ -1,0 +1,350 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/shoes-store.css" type="text/css">
+        <link rel="stylesheet" href="css/queries.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+        <script src="javascript/shopping-cart.js"></script>
+    </head>
+
+    <body>
+        <div class="top-div">
+            <div class="div-list">
+                <ul class="ul-list">
+                    <select name="currencies" class="currencies-menu">
+                        <option value="gbp" class="options-currencies">UK GBP</option>
+                        <option value="euro" class="options-currencies">EU EURO</option>
+                        <option value="usd" class="options-currencies">USA USD</option>
+                    </select>  
+                     <a href="#" class="top-links"><li class="first-list"> Sign up</li></a> 
+                     <a href="#" class="top-links"><li class="first-list" id="saved-items"> Saved Items </li></a> 
+                </ul>
+            </div>
+
+            <div class="title">
+                <h1> Women Wishes</h1>
+            </div>
+
+           <div class="div-list2">
+             <ul class="ul-list2" id="ulForIcon">
+                    <a href="#" class="top-links"><li class="first-list"> Login | Register</li></a>
+                    <li class="first-list">
+                        <a href="#" id="link-cart"><p id="products-cart" onclick="location.href='./basket-details.html';"> 0 </p></a> 
+                        <img src="img/shopping-cart.png" class="cart"/>
+                     
+                        <p id="basket-total">Total: 0£ </p> 
+                    </li>
+             </ul>
+           </div>
+        </div>
+
+        <aside>
+            <div class="div-categories">
+                <ul class="ul-categories">
+                <li id="categ"> Categories </li> 
+               <a href="#" class="link-categories-list"><li class="categories-list"> Boots </li></a> 
+               <a href="#" class="link-categories-list"><li class="categories-list"> Flats</li></a> 
+               <a href="#" class="link-categories-list"><li class="categories-list"> Heels</li></a> 
+               <a href="#" class="link-categories-list"><li class="categories-list"> Sandals </li></a> 
+               <a href="#" class="link-categories-list"><li class="categories-list">Trainers </li></a>
+            </div>
+
+            <div class="div-filters">
+                <ul class="ul-filters">
+                   <li id="filt">Filters</li> 
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 2</li></a> 
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 3</li></a>  
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 3.5</li></a>  
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 4</li></a> 
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 4.5</li></a>  
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 5</li></a>  
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 5.5</li></a>  
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 6</li></a> 
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 6.5</li></a>   
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 7</li></a>  
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 7.5</li></a> 
+                   <a href="#" class="link-filtered-list"><li class="filters-list"> UK 8</li></a> 
+                </ul> 
+            </div> 
+
+
+            <div class="div-colour">
+                <ul class="ul-colour">
+                    <li id="colour">Colour</li> 
+                    <a href="#" class="link-colours"><li class="filters-list"> Beige </li></a> 
+                    <a href="#" class="link-colours"><li class="filters-list"> Black </li></a>  
+                    <a href="#" class="link-colours"><li class="filters-list"> Brown </li></a>  
+                    <a href="#" class="link-colours"><li class="filters-list"> White </li></a> 
+                </ul>
+            </div>
+        </aside>
+
+        <section class="central-div">
+            <div class="div-menu">
+                <ul class="ul-menu">
+                    <a href="#" class="links-menu"><li class="list-menu">New In</li></a>  
+                    <a href="#" class="links-menu"><li class="list-menu">Women</li></a> 
+                    <a href="#" class="links-menu"><li class="list-menu">Men</li></a>
+                    <a href="#" class="links-menu"><li class="list-menu">Bag&Accessories</li></a>
+                    <a href="#" class="links-menu"><li class="list-menu">Brands</li></a>
+                    <a href="#" class="links-menu"><li class="list-menu">Inspiration</li></a> 
+                </ul>
+            </div>
+
+            <div class="sort-by-container">
+                <label for="sortOptions" class="sort-by"> Sort by: </label>
+                <select name="sort" class="sort-options">
+                    <option value="relevance" class="options-js1"> Relevance </option>
+                    <option value="relevance" class="options-js1"> Best Sellers </option>
+                    <option value="relevance" class="options-js1"> New Arrivals </option>
+                    <option value="relevance" class="options-js1"> Top Rated </option>
+                    <option value="relevance" class="options-js1"> Name (ascending) </option>
+                    <option value="relevance" class="options-js1">Name (discending) </option>
+                </select>
+            </div>  
+
+            <div class="big-div">
+                <div id="product1" class="div-product">
+                    
+                    <div class="div-img">
+                        <img class="img-details"/>
+                    </div>  
+				
+                    <div class="div-name">
+						<p class="name-product" id="nameId">Embellished T-Bar Wedge Sandals</p>
+					</div>
+					
+					<div class="div-price">
+						<p class="price" id="price1"> 15£ </p>
+					</div>
+
+					<div class="div-size">
+						<label for="size" class="label-size"> Size: </label>
+						<select name="options-sizes" class="sizes" id="prod1">
+						</select>
+					</div>
+
+					<div class="div-quantity">
+						<label for="quantity" class="label-quantity"> Quantity: </label>
+						<select id="quantity1" name="select-quantity" id="quantityId"class="options-quantities">
+						</select>
+					</div>
+                    <button class="button"> <p class="add-to"> ADD TO BASKET </p></button>
+                </div>
+
+                <div id="product2" class="div-product">
+                    
+                    <div class="div-img">  
+                        <img class="img-details"/>
+                    </div>
+  
+                    <div class="div-name">
+                            <p class="name-product"> Embellished T-Bar Wedge Sandals </p>
+                    </div>
+                        <div class="div-price">
+                            <p class="price"> 15£ </p>
+                        </div>
+                        
+                        <div class="div-size">
+                                <label for="size" class="label-size"> Size: </label>
+                                <select name="options-sizes" class="sizes">
+                                </select>
+                        </div>
+
+                        <div class="div-quantity">
+                                <label for="quantity" class="label-quantity"> Quantity: </label>
+                                <select name="select-quantity" class="options-quantities">
+                                </select>
+                            </div>
+
+                    <button class="button"> <p class="add-to"> ADD TO BASKET </p></button>
+                </div>
+
+                <div id="product3" class="div-product">
+
+                        <div class="div-img">
+                            <img class="img-details"/>
+                        </div>
+
+                        <div class="div-name">
+                            <p class="name-product">Embellished T-Bar Wedge Sandals</p>
+                        </div>
+
+                        <div class="div-price">
+                            <p class="price"> 15£ </p>
+                        </div>
+
+                        <div class="div-size">
+                                <label for="size" class="label-size"> Size: </label>
+                                <select name="options-sizes" class="sizes">
+                                </select>
+                        </div>
+
+                        <div class="div-quantity">
+                                <label for="quantity" class="label-quantity"> Quantity: </label>
+                                <select name="select-quantity" class="options-quantities">
+                                </select>
+                        </div>
+
+                    <button class="button"> <p class="add-to"> ADD TO BASKET </p></button>
+                </div>
+
+                <div id="product4" class="div-product">
+
+                        <div class="div-img">
+                            <img class="img-details"/>
+                        </div>
+
+                        <div class="div-name">
+                            <p class="name-product"> Embellished T-Bar Wedge Sandals </p>
+                        </div>
+
+                        <div class="div-price">
+                            <p class="price"> 15£ </p>
+                        </div>
+
+                        <div class="div-size">
+                                <label for="size" class="label-size"> Size: </label>
+                                <select name="options-sizes" class="sizes">
+                                </select>
+                        </div>
+
+                        <div class="div-quantity">
+                                <label for="quantity" class="label-quantity"> Quantity: </label>
+                                <select name="select-quantity" class="options-quantities">
+                                </select>
+                        </div>
+
+                    <button class="button"> <p class="add-to"> ADD TO BASKET </p></button>
+                </div>
+
+                <div id="product5" class="div-product">
+
+                    <div class="div-img">
+                        <img class="img-details"/>
+                    </div>
+
+                    <div class="div-name">
+                        <p class="name-product"> Embellished T-Bar Wedge Sandals </p>
+                    </div>
+
+                    <div class="div-price">
+                        <p class="price"> 15£ </p>
+                    </div>
+
+                    <div class="div-size">
+                            <label for="size" class="label-size"> Size: </label>
+                            <select name="options-sizes" class="sizes">
+                            </select>
+                    </div>
+
+                    <div class="div-quantity">
+                            <label for="quantity" class="label-quantity"> Quantity: </label>
+                            <select name="select-quantity" class="options-quantities">
+                            </select>
+                        </div>
+
+                    <button class="button"> <p class="add-to"> ADD TO BASKET </p></button>
+                </div>
+
+                <div id="product6" class="div-product">
+
+                        <div class="div-img">
+                            <img class="img-details"/>
+                        </div>
+
+                        <div class="div-name">
+                            <p class="name-product"> Embellished T-Bar Wedge Sandals</p>
+                        </div>
+
+                        <div class="div-price">
+                            <p class="price"> 15£  </p>
+                        </div>
+
+                        <div class="div-size">
+                                <label for="size" class="label-size"> Size: </label>
+                                <select name="options-sizes" class="sizes">
+                                </select>
+                        </div>
+
+                        <div class="div-quantity">
+                                <label for="quantity" class="label-quantity"> Quantity: </label>
+                                <select name="select-quantity" class="options-quantities">
+                                </select>
+                            </div>
+
+                    <button class="button"> <p class="add-to"> ADD TO BASKET </p></button>
+                </div>
+
+                <div id="product7" class="div-product">
+
+                        <div class="div-img">
+                            <img class="img-details"/>
+                        </div>
+
+                        <div class="div-name">
+                            <p class="name-product"> Embellished T-Bar Wedge Sandals </p>
+                        </div>
+
+                        <div class="div-price">
+                            <p class="price"> 15£ </p>
+                        </div>
+
+                        <div class="div-size">
+                                <label for="size" class="label-size"> Size: </label>
+                                <select name="options-sizes" class="sizes">
+                                </select>
+                        </div>
+                        
+                        <div class="div-quantity">
+                                <label for="quantity" class="label-quantity"> Quantity: </label>
+                                <select name="select-quantity" class="options-quantities">
+                                </select>
+                            </div>
+
+                    <button class="button"> <p class="add-to"> ADD TO BASKET </p></button>
+                </div>
+
+                <div id="product8" class="div-product">
+
+                        <div class="div-img">
+                            <img class="img-details"/>
+                        </div>
+
+
+                        <div class="div-name">
+                            <p class="name-product"> Embellished T-Bar Wedge Sandals </p>
+                        </div>
+
+                        <div class="div-price">
+                            <p class="price"> 15£ </p>
+                        </div> 
+
+                        <div class="div-size">
+                                <label for="size" class="label-size"> Size: </label>
+                                <select name="options-sizes" class="sizes">
+                                </select>
+                        </div>
+                        
+                        <div class="div-quantity">
+                                <label for="quantity" class="label-quantity"> Quantity: </label>
+                                <select name="select-quantity" class="options-quantities">
+                                    <!-- <option value="zero" class="options-js"> 1 </option>
+                                    <option value="one" class="options-js"> 3 </option>
+                                    <option value="due" class="options-js"> 5 </option>
+                                    <option value="three" class="options-js"> 7 </option>
+                                    <option value="four" class="options-js"> 8 </option>
+                                    <option value="five" class="options-js"> 9 </option> -->
+                                </select>
+                            </div>
+                    <button class="button"> <p class="add-to"> ADD TO BASKET </p></button>
+                </div>
+                <!-- <div class="div-product"><img src="C:/Users/Roberta/Desktop/exercises-javascript/final-shopping-cart/img9.jpg" class="img-details"/></div> -->
+            </div>
+    
+
+        </section>
+
+
+    </body>
+</html>
