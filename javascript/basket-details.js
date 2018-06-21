@@ -13,14 +13,13 @@ window.addEventListener('load', function() {
 
     function displayTotal() {
       var displayTotal = document.getElementById('products-cart');
-      displayTotal.innerHTML = "£" + getTotalFromBrowser();
+      displayTotal.innerHTML = "£" + getTotalFromBrowser() ;
     }
     
     displayTotal();
 
     function displayBasket() {
         var basketFromStore = getBasketFromStore();
- 
         var finalCart = [];
         for (var i = 0; i < basketFromStore.length; i++){
             var printedProducts = createHtmlForProduct(basketFromStore[i], i);
@@ -121,7 +120,6 @@ window.addEventListener('load', function() {
             for (var key in basket) {
                 if(basket[key].name == productName) {
                    basket.splice(key, 1);
-                   //console.log(" THIS IS THE BASKET: ", basket.splice(key, 1));
                 } 
             }
         return basket; 
@@ -157,13 +155,4 @@ window.addEventListener('load', function() {
         writeTotal.innerHTML = total;
        return total;
     }   
-
-    // function storeNewTotal(total) {
-    //     sessionStorage.setItem('newTotal', total);
-    // }
-
-    // function getNewTotal() {
-    //     return sessionStorage.getItem('newTotal');
-    // }
-    // getNewTotal;
 })
