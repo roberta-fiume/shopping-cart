@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" text="text/css" href="css/style-login.css">
+        <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+        <link href="https://www.paletton.com/#uid=14E0u0kfWsQ6hMib0-EkEnQp5jlrel=" rel="stylesheet">
+
+        <script src="person.js"></script>
+        <script src="javascript/login.js"></script>
+    </head>
+    <body>
+      
+        <form id="id-form-login" name="myFormLogin" action="#" autocomplete="off">
+            <div id="login-h1"><h1>Login</h1></div>
+            <div class="div-input">
+                <input type="text" name="email" class="input-login" id="id-email" placeholder="E-mail">
+                <div class="iconCheck"><img src="img/checkTrue.png" class="img-true" id="true1"/></div>
+                <div class="iconCheck"><img src="img/checkFalse.png" class="img-false" id="false1"/></div>
+            </div>
+          
+           <div class="div-input">
+                <input type="password" name="password" class="input-login" id="id-password"  placeholder="Password">
+                <div class="iconCheck"><img src="img/checkTrue.png" class="img-true" id="true2"/></div>
+                <div class="iconCheck"><img src="img/checkFalse.png" class="img-false" id="false2"/></div> 
+           </div> 
+           <div class="div-registrate"><p class="sign-up"><a id="link-to-register" href="register.html">Not registered yet? Create an account. </a></p></div>
+                 
+            <br><br>
+            <input type="submit" value="Sign in" id="button-login">
+            <div id="div-login">
+                <div id="div-login-successful">
+                    <img src="icon-successful.png" id="loginSuccessful"/>
+                    <p id="message-successfull">Login successfull!</p>
+                </div>
+                <div id="div-login-failed">
+                    <img src="loginFailed.png" id="loginFailed"/>
+                    <p id="message-failed"> Login failed. Please, try again</p>
+                </div>
+            </div>
+        </form>
+        </div>
+    </body>
+
+</html>
