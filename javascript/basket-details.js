@@ -28,6 +28,13 @@ window.addEventListener('load', function() {
         return finalCart; 
     }
 
+    function createDivProduct() {
+        var divProduct = document.createElement('div');
+        divProduct.setAttribute("class", 'details-box');
+ 
+        return divProduct;
+    }
+
     function createDivImage() {
         var divImg = document.createElement('div');
         divImg.setAttribute("class", "div-js");
@@ -95,58 +102,50 @@ window.addEventListener('load', function() {
     }
 
     function createHtmlForProduct(product, productName) { 
+        var bigDiv = document.getElementById("img-basket");
+        var divProduct = createDivProduct();
+        divProduct.setAttribute("productId", "detailsBox"+ productName);
+        bigDiv.appendChild(divProduct);
 
         var divImg = createDivImage();
         var image = createImg();
         image.setAttribute("src", product.image);
-  
-
+        divProduct.appendChild(divImg);
+        divImg.appendChild(image);
+        var productDetails = createDetailsBox();
+        divProduct.appendChild(productDetails);
+    
         var paragName = createParagraphName();
         var textName = document.createTextNode("Name: " + product.name); 
-        paragName.appendChild(textName);  
+        paragName.appendChild(textName); 
+        productDetails.appendChild(paragName); 
 
         var paragPrice = createParagraphPrice();
         var textPrice = document.createTextNode("Price: "+ product.price);
         paragPrice.appendChild(textPrice); 
+        productDetails.appendChild(paragPrice);
 
         var paragSize = createParagraphSize();
         var textSize = document.createTextNode("Size: " + product.size);
         paragSize.appendChild(textSize); 
+        productDetails.appendChild(paragSize);
 
         var paragQuantity = createParagraphQuantity();
         var textQuantity = document.createTextNode("Quantity: " + product.quantity);
         paragQuantity.appendChild(textQuantity); 
+        productDetails.appendChild(paragQuantity);
 
         var divButtons = createButtons();
+        divProduct.appendChild(divButtons);
         var divBuy = createDivBuy()
         var textBuy = createTextBuy();
         divBuy.appendChild(textBuy);
+        divButtons.appendChild(divBuy);
+
         var divRemove = createDivRemove();
         var textRemove = createTextRemove();
         divRemove.appendChild(textRemove);
-
-        var productDetails = createDetailsBox();
-
-        var divProduct = document.createElement('div');
-        divProduct.setAttribute("class", 'details-box');
-        divProduct.setAttribute("productId", "detailsBox"+ productName);
-
-
-        var bigDiv = document.getElementById("img-basket");
- 
-        bigDiv.appendChild(divProduct);
-            divProduct.appendChild(divImg);
-            divImg.appendChild(image);
-            divProduct.appendChild(productDetails);
-            divProduct.appendChild(divButtons);
-            divButtons.appendChild(divRemove);
-            divButtons.appendChild(divRemove);
-            divButtons.appendChild(divBuy);
-            productDetails.appendChild(paragName);
-            productDetails.appendChild(paragPrice);
-            productDetails.appendChild(paragSize);
-            productDetails.appendChild(paragQuantity);
-         
+        divButtons.appendChild(divRemove);  
     }
 
  
