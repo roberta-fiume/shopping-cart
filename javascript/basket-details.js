@@ -28,6 +28,44 @@ window.addEventListener('load', function() {
         return finalCart; 
     }
 
+    function createDivImage() {
+        var divImg = document.createElement('div');
+        divImg.setAttribute("class", "div-js");
+        return divImg;
+    }
+
+    function createImg() {
+        var image = document.createElement("img");
+        image.setAttribute("class", "img-js");
+        return image;
+    }
+
+    function createDetailsBox() {
+        var productDetails = document.createElement('div');
+        productDetails.setAttribute("class", 'js-detailsBox');
+        return productDetails;
+    }
+
+    function createParagraphName() {
+        var paragName = document.createElement("p");
+        return paragName;
+    }
+
+    function createParagraphPrice() {
+        var paragPrice = document.createElement("p"); 
+        return paragPrice;
+    }
+
+    function createParagraphSize() {
+        var paragSize = document.createElement("p"); 
+        return paragSize;
+    }
+
+    function createParagraphQuantity() {
+        var paragQuantity = document.createElement("p"); 
+        return paragQuantity;
+    }
+
     function createButtons() {
         var divButtons = document.createElement('div');
         divButtons.setAttribute("class", "div-buttons-js");
@@ -57,6 +95,28 @@ window.addEventListener('load', function() {
     }
 
     function createHtmlForProduct(product, productName) { 
+
+        var divImg = createDivImage();
+        var image = createImg();
+        image.setAttribute("src", product.image);
+  
+
+        var paragName = createParagraphName();
+        var textName = document.createTextNode("Name: " + product.name); 
+        paragName.appendChild(textName);  
+
+        var paragPrice = createParagraphPrice();
+        var textPrice = document.createTextNode("Price: "+ product.price);
+        paragPrice.appendChild(textPrice); 
+
+        var paragSize = createParagraphSize();
+        var textSize = document.createTextNode("Size: " + product.size);
+        paragSize.appendChild(textSize); 
+
+        var paragQuantity = createParagraphQuantity();
+        var textQuantity = document.createTextNode("Quantity: " + product.quantity);
+        paragQuantity.appendChild(textQuantity); 
+
         var divButtons = createButtons();
         var divBuy = createDivBuy()
         var textBuy = createTextBuy();
@@ -64,38 +124,14 @@ window.addEventListener('load', function() {
         var divRemove = createDivRemove();
         var textRemove = createTextRemove();
         divRemove.appendChild(textRemove);
-        
-    
-      
-        var productDetails = document.createElement('div');
-        productDetails.setAttribute("class", 'js-detailsBox');
+
+        var productDetails = createDetailsBox();
 
         var divProduct = document.createElement('div');
         divProduct.setAttribute("class", 'details-box');
         divProduct.setAttribute("productId", "detailsBox"+ productName);
 
- 
-        var divImg = document.createElement('div');
-        divImg.setAttribute("class", "div-js");
- 
-        var image = document.createElement("img");
-        image.setAttribute("src", product.image);
-        image.setAttribute("class", "img-js");
- 
-        var paragName = document.createElement("p");
-        var textName = document.createTextNode("Name: " + product.name); 
-        var paragPrice = document.createElement("p"); 
-        var textPrice = document.createTextNode("Price: "+ product.price);
-        var paragSize = document.createElement("p"); 
-        var textSize = document.createTextNode("Size: " + product.size);
-        var paragQuantity = document.createElement("p"); 
-        var textQuantity = document.createTextNode("Quantity: " + product.quantity);
- 
-        paragName.appendChild(textName);  
-        paragPrice.appendChild(textPrice); 
-        paragSize.appendChild(textSize); 
-        paragQuantity.appendChild(textQuantity); 
-        
+
         var bigDiv = document.getElementById("img-basket");
  
         bigDiv.appendChild(divProduct);
