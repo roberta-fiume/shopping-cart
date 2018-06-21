@@ -28,45 +28,20 @@ window.addEventListener('load', function() {
         return finalCart; 
     }
 
-    function createButtons() {
+  
+    function createHtmlForProduct(product, productName) { 
         var divButtons = document.createElement('div');
         divButtons.setAttribute("class", "div-buttons-js");
-        return divButtons;
-    }
-
-    function createDivBuy() {
-        var divBuy = document.createElement('div');
-        divBuy.setAttribute("class", "div-buy-js");
-        return divBuy;
-    }
-
-    function createDivRemove() {
+      
         var divRemove = document.createElement('div');
         divRemove.setAttribute("class", "div-remove-js");
-        return divRemove;
-    }
-
-    function createTextBuy() {
-        var textBuy = document.createTextNode("Buy" ); 
-        return textBuy;
-    }
-
-    function createTextRemove() {
         var textRemove = document.createTextNode("Remove" ); 
-        return textRemove;
-    }
-
-    function createHtmlForProduct(product, productName) { 
-        var divButtons = createButtons();
-        var divBuy = createDivBuy()
-        var textBuy = createTextBuy();
-        divBuy.appendChild(textBuy);
-        var divRemove = createDivRemove();
-        var textRemove = createTextRemove();
-        divRemove.appendChild(textRemove);
-        
-    
-      
+ 
+        var divBuy = document.createElement('div');
+        divBuy.setAttribute("class", "div-buy-js");
+        var textBuy= document.createTextNode("Buy" ); 
+ 
+ 
         var productDetails = document.createElement('div');
         productDetails.setAttribute("class", 'js-detailsBox');
 
@@ -110,7 +85,8 @@ window.addEventListener('load', function() {
             productDetails.appendChild(paragPrice);
             productDetails.appendChild(paragSize);
             productDetails.appendChild(paragQuantity);
-         
+            divRemove.appendChild(textRemove);
+            divBuy.appendChild(textBuy);
     }
 
  

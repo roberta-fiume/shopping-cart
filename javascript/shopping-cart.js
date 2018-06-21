@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
       }
     }
 
-   createImg();
+  createImg();
 
    
   function createProductName() {
@@ -57,7 +57,6 @@ window.addEventListener('load', function() {
          select.add(optionSize);
       }
   }
-  
   
   createSizes();
   
