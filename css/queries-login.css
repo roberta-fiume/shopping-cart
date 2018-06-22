@@ -1,0 +1,314 @@
+/* Desktops and laptops */
+@media only screen  and (min-device-width: 1500px)
+and (max-device-width: 2500px)  {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #954B95;
+    }
+    
+    .img-true {
+        display: none;
+        width: 10px;
+        height: 10px;
+    }
+    
+    #img-true1 {
+        display: none;
+        width: 10px;
+        height: 10px;
+    }
+    
+    #img-true2 {
+        display: none;
+        width: 10px;
+        height: 10px;
+    }
+    
+     .img-false {
+        display: none;
+        width: 10px;
+        height: 10px;
+    } 
+    
+    #img-false1 {
+        display: none !important;
+        width: 10px;
+        height: 10px;
+    }
+    
+    #img-false2 {
+        display: none !important;
+        width: 10px;
+        height: 10px;
+    }
+    
+    #login-h1 {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        margin-left: 10px;
+        font-family: 'Bellefair', serif;
+        color: #B375B3;
+    }
+    
+    #id-form-login {
+        margin-left: 10px;
+        width: 400px;
+        height: 400px;
+        font-family: 'Bellefair', serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(235, 229, 229);
+    }
+    
+    .div-input {
+        /* background-color: lightgreen; */
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:  'Bellefair', serif; 
+        font-size: 18px;
+        height: 140px;
+        width: 220px;
+    }
+      
+    .input-login {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: flex-start;
+        border: none;
+        padding: 4px 0;
+        border-bottom: 1px solid #B375B3;
+        background-color: transparent;
+        font-family: 'Bellefair', serif;
+        font-size: 16px;
+        width: 200px;
+        height: 50px;
+        margin-bottom: 0px;
+    }
+
+    #id-email {
+        margin-left: 0px;
+    }
+    
+    .input-text {
+        display: flex;
+        width: 120px;
+        height: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .input-login:focus {
+        outline: none;
+        border-bottom: 2px solid #B375B3;
+        transition: 0.4s;
+    }
+    
+    
+    .input-login::placeholder:focus {
+        color:  #7D529A;
+         transform: scale(0.50); 
+    }
+    
+    #button-login {
+        align-self: center;
+        border: 1px solid #B375B3;
+        background-color: rgb(235, 229, 229);
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 60px;
+        border-radius: 3.5px;
+        font-family: 'Bellefair', serif;
+        font-size: 17.5px;
+        
+    }
+    #button-login:focus {
+        outline: 0 none;
+    }
+    
+    
+    #button-login:hover {
+        /* color: #60327F */
+        border: 1.5px solid #B375B3;
+        color: #B375B3;
+        
+    }
+    
+    #div-login {
+        display: flex;
+        width: 500px;
+        height: 80px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+    
+    #div-login-successful {
+        margin-left: 15px;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 500px;
+        height: 50px;
+        color: rgb(33, 159, 33);
+    
+    }
+    
+    #div-login-failed {
+        margin-left: 15px;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 500px;
+        height: 50px;
+        color: rgb(191, 11, 11);
+    }
+    
+    #loginSuccessful {
+        width: 40px;
+        height: 50px;    
+    }
+    
+    #loginFailed {
+        width: 40px;
+        height: 40px;
+    }
+
+    #message-successfull {
+        margin-left: 7px;
+        display: flex;
+    }
+    
+    #message-failed {
+        margin-left: 7px;
+        display: flex;
+    }
+    
+
+    .div-registrate {
+        display: flex;
+        height: 35px;
+        align-items: center;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+    #link-to-register {
+        margin-left: 10px;
+        color:#954B95;
+    }
+    
+    #link-to-register:active {
+        color: #954B95;
+    
+    }
+   
+}
+
+/* IPAD PRO LANDSCAPE */
+/* @media only screen 
+and (min-device-width: 1024px) 
+and (max-device-width: 1366px) 
+and (orientation: landscape) {
+   
+} */
+
+
+/* IPAD PRO POTRAIT */
+@media only screen 
+and (min-width: 1024px) 
+and (max-width: 1366px) 
+and (orientation: portrait) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #954B95;
+    }
+
+    #login-h1 { 
+        font-size: 24px;
+    }
+
+    #id-form-login {
+        width: 500px;
+        height: 600px;
+    }
+
+    .div-input {
+        margin-left: 0px;
+        font-size: 18px;
+        height: 140px;
+        width: 350px;
+    }
+
+    .input-login {
+        font-size: 21px;
+        width: 300px;
+    }
+ 
+  
+}
+
+
+/* IPAD MINI Portrait  */
+@media only screen and (min-device-width: 768px) 
+and (max-device-width: 1023px) 
+and (orientation: portrait) {
+
+    #loginSuccessful {
+        width: 30px;
+        height: 40px;
+    }
+
+    #message-successfull {
+        font-size: 16px;
+        margin-left: 7px;
+        display: flex;
+    }
+
+    #loginFailed {
+        width: 40px;
+        height: 40px;
+    }
+
+    #message-failed {
+        font-size: 16px;
+        margin-left: 7px;
+        display: flex;
+    }
+
+
+}
+
+
+/* IPAD MINI Landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape) {
+}
+
+/* MOBILES */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+}
