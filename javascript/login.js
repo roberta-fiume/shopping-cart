@@ -44,10 +44,10 @@ window.addEventListener("load", function() {
         var personArrayStoredInBrowser = getStoredPersonArrayFromBrowser();
         for (var i=0; i < personArrayStoredInBrowser.length; i++) {
             if((personArrayStoredInBrowser[i].email === userData.email) && (personArrayStoredInBrowser[i].password === userData.password)) {
-              return loginSuccessful.style.display = "block";
+              return loginSuccessful.style.display = "flex";
             }
         }
-        return  loginFailed.style.display = "block";
+        return  loginFailed.style.display = "flex";
     }
 
     function setTimeoutForEmail() {

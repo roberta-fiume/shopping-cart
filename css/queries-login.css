@@ -263,9 +263,7 @@ and (orientation: portrait) {
     .input-login {
         font-size: 21px;
         width: 300px;
-    }
- 
-  
+    } 
 }
 
 
@@ -296,7 +294,6 @@ and (orientation: portrait) {
         display: flex;
     }
 
-
 }
 
 
@@ -313,34 +310,119 @@ and (min-device-width: 320px)
 and (max-device-width: 480px) {
 
     html {
-        display: flex;
         width: 100%;
         height: 100%;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     body {
         display: flex;
         width: 100%;
-        height: 100%;
+        min-height: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: #954B95;
     }
 
-    #id-form-login {
-        /* flex-grow: 1;
-        flex-shrink: 1; */
-        width: 270px;
-        height: 100%;;
+    #login-h1 {
+        font-size: 45px;
     }
 
+    #id-form-login {
+        width: 100%;
+        height: 100%;
+    }
+
+    .div-input {
+        height: 240px;
+        width: 720px;
+        justify-content: flex-start;
+    }
+
+    .input-login {
+        font-size: 45px;
+        width: 700px;
+        height: 120px;
+        border-bottom: 2px solid #B375B3;
+    }
+
+    .input-login:focus {
+        outline: none;
+        border-bottom: 4px solid #B375B3;
+        transition: 0.4s;
+    }
     
+    
+    .input-login::placeholder:focus {
+        color:  #7D529A;
+        transform: scale(0.100); 
+    }
+
+    .img-false {
+        width: 30px;
+        height: 30px;
+    }
+
+    .img-true{
+        width: 30px;
+        height: 30px;
+    }
+
+    .div-registrate {
+        display: flex;
+        height: 135px;
+        font-size: 42px;
+    }
+
+    #button-login {
+        margin-left: 0px;
+        width: 450px;
+        height: 150px;
+        font-size: 45px;
+    }
+
+    #div-login {
+        width: 500px;
+        height: 200px;
+
+    }
+
+    #div-login-failed {
+        width: 500px;
+        height: 150px;
+    }
+
+    #loginFailed {
+        width: 100px;
+        height: 100px;
+    }
+
+    #message-failed {
+        margin-left: 7px;
+        display: flex;
+        font-size: 34px;
+    }
+
+
+    
+    #div-login-successful {
+        font-size: 40px;
+        width: 500px;
+        height: 150px;
+    }
+
+    #loginSuccessful {
+        width: 100px;
+        height: 120px;
+    }
+
+    #message-successful {
+        margin-left: 7px;
+        display: flex;
+        font-size: 34px;
+    }
+
+
 
   
 }
