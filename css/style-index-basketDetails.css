@@ -30,7 +30,7 @@ body {
 }
 
 .top-links:hover {
-    color: lightcoral !important;
+    color: #B375B3;
 }
 
 .links-menu {
@@ -39,7 +39,7 @@ body {
 }
 
 .links-menu:hover {
-    color: lightcoral
+    color: #B375B3;
 }
 
 #products-cart {
@@ -47,7 +47,7 @@ body {
 }
 
 #products-cart:hover {
-    color: lightsalmon;
+    color: #B375B3;
 }
 
 
@@ -56,7 +56,7 @@ body {
     
 }
 .link-categories-list:hover {
-  color: lightsalmon;
+  color: #B375B3;
     
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .link-filtered-list:hover {
- color: lightsalmon;
+ color: #B375B3;
 }
 
 .link-colours {
@@ -73,7 +73,7 @@ body {
 }
 
 .link-colours:hover {
-   color: lightsalmon;
+   color: #B375B3;
 }
 
 
@@ -174,6 +174,7 @@ body {
 }
 
 .title h1 {
+    color: #641664;
     font-family:'Bellefair', serif;
     font-size: 50px;
 }
@@ -668,7 +669,7 @@ aside {
 }
 
 .add-to:hover {
-  color: lightsalmon;
+  color: #B375B3;
 }
 
 .div-name {
@@ -688,7 +689,6 @@ aside {
 
 .name-product {
     font-family:'Bellefair', serif;
-
 }
 
 .div-price {

@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
    var products = [
      {image: "img/img1.jpg", name: "Embellished T-Bar Wedge Sandals", price: "15£", size: ["------","UK 3", "UK 4", "UK 4.5", "UK 5", "UK 5.5", "UK 6", "UK 6.5", "UK 7", "UK 7.5", "UK 8", "UK 8.5"], quantity: [0,1,2,3,4]},
      {image: "img/img2.jpg", name: "Ankle Black Boots", price: "25£",  size: ["------","UK 3", "UK 4", "UK 4.5", "UK 5", "UK 5.5", "UK 6", "UK 6.5", "UK 7", "UK 7.5", "UK 8", "UK 8.5"], quantity: [0,1,2,3,4]},
-     {image: "img/img3.jpg", name: "Overknee Heels Sandals", price: "39.90",  size: ["------","UK 3", "UK 4", "UK 4.5", "UK 5", "UK 5.5", "UK 6", "UK 6.5", "UK 7", "UK 7.5", "UK 8", "UK 8.5"], quantity: [0,1,2,3,4]},
+     {image: "img/img3.jpg", name: "Overknee Heels Sandals", price: "39.90£",  size: ["------","UK 3", "UK 4", "UK 4.5", "UK 5", "UK 5.5", "UK 6", "UK 6.5", "UK 7", "UK 7.5", "UK 8", "UK 8.5"], quantity: [0,1,2,3,4]},
      {image: "img/img4.jpg", name: "Flowers Flats", price: "25£",  size: ["------","UK 3", "UK 4", "UK 4.5", "UK 5", "UK 5.5", "UK 6", "UK 6.5", "UK 7", "UK 7.5", "UK 8", "UK 8.5"], quantity: [0,1,2,3,4]},
      {image: "img/img5.jpg", name: "Ankle Beige Boots", price: "33.99£",  size: ["------","UK 3", "UK 4", "UK 4.5", "UK 5", "UK 5.5", "UK 6", "UK 6.5", "UK 7", "UK 7.5", "UK 8", "UK 8.5"], quantity: [0,1,2,3,4]},
      {image: "img/img6.jpg", name: "Elegant Black Man-Style Shoes", price: "35.90£",  size: ["------","UK 3", "UK 4", "UK 4.5", "UK 5", "UK 5.5", "UK 6", "UK 6.5", "UK 7", "UK 7.5", "UK 8", "UK 8.5"], quantity: [0,1,2,3,4]},
