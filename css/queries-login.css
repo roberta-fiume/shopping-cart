@@ -69,7 +69,6 @@ and (max-device-width: 2500px)  {
     }
     
     .div-input {
-        /* background-color: lightgreen; */
         margin-left: 10px;
         display: flex;
         justify-content: center;
@@ -141,7 +140,6 @@ and (max-device-width: 2500px)  {
     
     
     #button-login:hover {
-        /* color: #60327F */
         border: 1.5px solid #B375B3;
         color: #B375B3;
         

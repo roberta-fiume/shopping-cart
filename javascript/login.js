@@ -30,7 +30,6 @@ window.addEventListener("load", function() {
         return new UserLogin(email, password);
     }
 
-
     function getStoredPersonArrayFromBrowser() {
         var personArrayAsString = localStorage.getItem('personArray');
         var personArrayStoredInBrowser = JSON.parse(personArrayAsString);
@@ -80,14 +79,13 @@ window.addEventListener("load", function() {
         console.log("im in validate email");
         var valueEmail = document.getElementById('id-email').value;
         var checkTrue = document.getElementById('true1');
-        console.log(checkTrue);
         var checkFalse = document.getElementById('false1');
         var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if (valueEmail.match(emailPattern)) {
             checkFalse.style.display = "none";
             return checkTrue.style.display = "block";
         } else {
-            checkTrue.style.display = "none"
+            checkTrue.style.display = "none";
             return checkFalse.style.display = "block";
         }
     }

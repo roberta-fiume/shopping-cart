@@ -33,9 +33,14 @@ and (max-device-width: 2500px)  {
     }
 
     .ul-filters {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         list-style: none;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 350px;
         width: 180px;
         padding-left: 0px;
@@ -47,9 +52,14 @@ and (max-device-width: 2500px)  {
 
     .ul-colour {
         padding-left: 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         list-style: none;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 180px;
         width: 180px;
     }
@@ -72,7 +82,9 @@ and (max-device-width: 2500px)  {
     }
 
     .big-div {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 100%;
     }
 
@@ -82,7 +94,9 @@ and (max-device-width: 2500px)  {
 
     .div-menu {
         height: 120px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .ul-menu {
@@ -90,13 +104,17 @@ and (max-device-width: 2500px)  {
     }
 
     .div-list {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: 400px;
         height: 80px;
     }
 
     .ul-list {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: 700px;
     }
 
@@ -113,8 +131,12 @@ and (max-device-width: 2500px)  {
     .div-list2 {
         height: 80px;
         width: 660px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .cart {
@@ -129,6 +151,8 @@ and (max-device-width: 2500px)  {
     }
 
     .div-product {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
        background-color: #F3EDED;
         width: 600px;
@@ -167,29 +191,47 @@ and (max-device-width: 2500px)  {
     }
 
     .sizes {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 30px;
         width: 60px;
         font-size: 14px;
     }
 
     .div-quantity {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 200px;
         height: 45px;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         font-family: 'Bellefair', serif;
         font-size: 20px;
     }
 
     .options-quantities {
         font-size: 16px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 30px;
         width: 40px;
     }
@@ -310,9 +352,14 @@ and (orientation: landscape) {
     }
 
     .ul-colour {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         list-style: none;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 180px;
         width: 140px;
     }
@@ -330,11 +377,14 @@ and (orientation: landscape) {
     }
 
     .big-div {
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .first-list {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         font-size: 23px;
     } 
 
@@ -344,7 +394,9 @@ and (orientation: landscape) {
     }
 
     .div-menu {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .list-menu {
@@ -352,25 +404,37 @@ and (orientation: landscape) {
     }
 
     .ul-list {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: 400px;
     }
     
     .div-list {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: 400px;
         height: 60px;
     }
 
     .div-list2 {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         height: 60px;
     }
 
     .sort-by-container {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .div-product {
         background-color: #F3EDED;
@@ -424,13 +488,19 @@ and (orientation: landscape) {
     }
 
     #img-basket {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
         height: 100%;
         background-color: white;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-top: 10px;
     }
 
@@ -508,6 +578,8 @@ and (orientation: portrait) {
 
     .div-product {
         background-color: #F3EDED;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 400px;
         height: 400px;
@@ -521,13 +593,16 @@ and (orientation: portrait) {
     }
 
     .div-menu {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 80%;
         margin-left: 80px;
     }
 
     .top-div {
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
 
     }
 
@@ -541,11 +616,17 @@ and (orientation: portrait) {
 
     .ul-filters {
         width: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         list-style: none;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 350px;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         font-family: 'Bellefair', serif;
         font-size: 15px;
         /* overflow: auto; */
@@ -561,22 +642,31 @@ and (orientation: portrait) {
     }
 
     .div-list {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 49px;
         margin-left: 8px;
     }
 
     .div-list2 {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 49px;
         width: 350px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .ul-list {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         font-size: 16px;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     #saved-items {
@@ -594,6 +684,8 @@ and (orientation: portrait) {
     }
 
     .title {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: 80px;
         width: 250px;
@@ -604,6 +696,8 @@ and (orientation: portrait) {
         font-size: 38px;
     }
     .list-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         list-style: none;
         font-family: 'Bellefair', serif;
@@ -611,9 +705,13 @@ and (orientation: portrait) {
     }
 
     .big-div {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 90%;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-left: 0px;
     }
 
@@ -631,7 +729,9 @@ and (orientation: portrait) {
 
     #img-basket {
         background-color: white;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .details-box {
@@ -718,14 +818,24 @@ and (orientation: portrait) {
     }
 
     .div-list {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         height: 50px;
         width: 200px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .top-links {
@@ -741,10 +851,18 @@ and (orientation: portrait) {
     .ul-list {
         height: 40px;
         width: 195px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding-left: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
@@ -776,7 +894,9 @@ and (orientation: portrait) {
     }
 
     .div-menu {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .list-menu {
@@ -787,15 +907,23 @@ and (orientation: portrait) {
         padding-left: 0px;
     }
     .central-div {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         height: 100%;
         width: 78.7%;
     }
 
     .big-div {
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .div-product {
@@ -825,7 +953,9 @@ and (orientation: portrait) {
     .div-list2 {
         height: 49px;
         width: 300px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     #central-section {
@@ -834,7 +964,8 @@ and (orientation: portrait) {
     }
 
     #img-basket {
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .details-box {
@@ -861,23 +992,32 @@ and (max-device-width: 1024px)
 and (orientation: landscape) {
 
     .div-list {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: 250px;
     }
     .ul-list {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding-left: 0px;
     }
 
     .div-list2 {
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         width: 492px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 60px;
     }
 
     .ul-list2 {
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         padding-left: 0px;
         font-size: 23px;
         width: 340px;
@@ -893,7 +1033,9 @@ and (orientation: landscape) {
     }
 
     .first-list {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         font-size: 18px;
     }
 
@@ -951,7 +1093,9 @@ and (orientation: landscape) {
     }
 
     .div-menu {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .ul-menu {
@@ -968,9 +1112,13 @@ and (orientation: landscape) {
     }
 
     .big-div {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 78%;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .div-product {
@@ -998,14 +1146,22 @@ and (orientation: landscape) {
     }
 
     .div-list2 {
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 360px;
     }
 
     .div-menu {
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     #img-basket {
@@ -1041,18 +1197,31 @@ and (max-device-width: 480px) {
         margin: 0px;
     }
     .top-div {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 300px;
         width: 100%;
         background-color: #F8DEDE;
-        justify-content: center;
-        flex-direction: row;
-        justify-content: flex-start;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 
     .title {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 80px;
         width: 100%;
     }
@@ -1063,26 +1232,40 @@ and (max-device-width: 480px) {
     }
 
     .div-list {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         /* flex-direction: row; */
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         height: 130px;
         width: 90px;
     }
 
     .first-list {
         font-size: 15px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         list-style: none;
     }
 
     .ul-list {
         width: 80px;
-        flex-direction: column;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         padding-left: 0px;
         height: 90px;
     }
@@ -1096,14 +1279,23 @@ and (max-device-width: 480px) {
     .div-list2 {
         width: 100%;
         height: 120px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .ul-list2 {
         padding-left: 0px;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 80px;
         padding-left: 0px;
         height: 100px;  
@@ -1191,39 +1383,66 @@ and (max-device-width: 480px) {
     }
 
     .big-div {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 90%;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .central-div {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         height: 100%;
         width: 71.5%;
         margin-top: 0px;
     }
 
     .div-menu {
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         /* position: fixed; */
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 100%;
         height: 180px !important;
         margin-bottom: 10px;
     }
 
     .ul-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 80%;
         height: 120px !important;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .list-menu {
@@ -1232,6 +1451,8 @@ and (max-device-width: 480px) {
 
     .div-product {
         background-color: #F3EDED;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 220px;
         height: 220px;
@@ -1241,9 +1462,15 @@ and (max-device-width: 480px) {
         margin-bottom: 20px;
     }
     .div-img {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 200px;
         height: 200px;
     }
@@ -1267,9 +1494,15 @@ and (max-device-width: 480px) {
     }
 
     .sizes {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 20px;
         width: 30px;
         font-size: 6px;
@@ -1280,18 +1513,30 @@ and (max-device-width: 480px) {
     }
 
     .options-quantities {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 20px;
         width: 30px;
         font-size: 10px;
     }
 
     label {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 30px;
         width: 45px;
     }
@@ -1302,15 +1547,26 @@ and (max-device-width: 480px) {
 
     .button {
         background-color: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         height: 25px;
         width: 80px;
     }
 
     .sort-by-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 150px;
         height: 40px;
@@ -1342,8 +1598,11 @@ and (max-device-width: 480px) {
     }
 
     .ul-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 80%;
         height: 120px;
         padding-left: 0px;
@@ -1374,17 +1633,27 @@ and (max-device-width: 480px) {
 
     .details-box {
         background-color: #F3EDED;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         width: 200px;
         height: 500px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-left: 10px;
     }
 
     #img-basket {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .js-detailsBox {
@@ -1392,6 +1661,8 @@ and (max-device-width: 480px) {
     }
 
     .div-buttons-js {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: 70px;
         width: 200px;

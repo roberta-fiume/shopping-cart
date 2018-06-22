@@ -68,7 +68,6 @@ window.addEventListener("load", function() {
 
    function getPersonArrayFromBrowser() {
         var personArrayAsString = localStorage.getItem('personArray');
-        console.log(personArrayAsString);
         if (personArrayAsString === null) {
             return [];
         } 
@@ -102,7 +101,6 @@ window.addEventListener("load", function() {
 
     function validatePass() {
         var divCheckPass = document.getElementById("check-pass");
-        console.log(divCheckPass);
         var valuePassword = document.getElementById('id-pass').value;
         var passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$/; 
         // at least one number, one lowercase and one uppercase letter
@@ -110,75 +108,6 @@ window.addEventListener("load", function() {
         if (valuePassword.match(passwordPattern)) {
           return  divCheckPass.style.display = "none";
         } else {
-            return divCheckPass.innerHTML = "Please, enter a correct password";         }
-        
-            // removeErrorMessage();
-        
+            return divCheckPass.innerHTML = "Please, enter a correct password";         }  
     }
-
-    // function removeErrorMessage() {
-    //     passwordInput = document.getElementById("id-pass");
-    //     var divCheckPass = document.getElementById("check-pass");
-    //     passwordInput.onkeyup = function() {
-    //     document.getElementById('id-pass').value = "";  
-    //      return divCheckPass.style.display = "none";
-    //     }
-    // }
-
-   
-
-    // function passwordWarning() {
-  
-    // }
-
-    // function createTextWarning() {
-    //  return  document.createTextNode("Password should be at least six characters that are letters and include at least one number, one lowercase and one uppercase letter.");
-    // }
-
-    // var textWarning = createTextWarning();
-    // console.log(textWarning);
-
-    // function createParagraph() {
-    //     var paragraph = document.createElement('p');
-    //     paragraph.setAttribute('id', 'text-warning');
-    //     return paragraph;
-    // }
-
-    // var paragraph = createParagraph();
-    // console.log(paragraph);
-
-    // function appendTexToParagraph() {
-    //    return paragraph.appendChild(textWarning);
-    // }
-
-    // var paragraphWithText = appendTexToParagraph();
-    // console.log(paragraphWithText);
-
-    // function createDivWarning() {
-    //     divPassWarning = document.createElement('div');
-    //     divPassWarning.setAttribute('id', 'div-warning');
-    //     return divPassWarning;
-    // }
-
-    // var divPassWarning = createDivWarning();
-    // console.log(divPassWarning);
-
-    // function appendParagraphToDiv() {
-       
-    //     return divPassWarning.appendChild(paragraph);
-    // }
-
-    // var divWithText = appendParagraphToDiv();
-    // console.log(divWithText);
-
-    // console.log(divPassWarning);
-
-    // function appendDivToForm() {
-    //     // form = document.getElementById('id-form');
-    //     divPass = document.getElementById("div-pass");
-    //     console.log(divPass);
-    //  return divPass.appendChild(divPassWarning);
-    // }
-
-
 });

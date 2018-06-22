@@ -8,10 +8,19 @@ html {
 body {
     width: 100%;
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #954B95;
 }
 
@@ -53,10 +62,19 @@ body {
 
 #login-h1 {
     font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 130px;
     margin-left: 10px;
     font-family: 'Bellefair', serif;
@@ -68,18 +86,30 @@ body {
     width: 400px;
     height: 400px;
     font-family: 'Bellefair', serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-color: rgb(235, 229, 229);
 }
 
 .div-input {
     /* background-color: lightgreen; */
     margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family:  'Bellefair', serif; 
     font-size: 18px;
     height: 140px;
@@ -87,10 +117,17 @@ body {
 }
   
 .input-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     border: none;
     padding: 4px 0;
     border-bottom: 1px solid #B375B3;
@@ -107,33 +144,62 @@ body {
 }
 
 .input-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 120px;
     height: 20px;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .input-login:focus {
     outline: none;
     border-bottom: 2px solid #B375B3;
+    -webkit-transition: 0.4s;
     transition: 0.4s;
+}
+
+
+.input-login::-webkit-input-placeholder:focus {
+    color:  #7D529A;
+     -webkit-transform: scale(0.50);
+             transform: scale(0.50); 
+}
+
+
+.input-login:-ms-input-placeholder:focus {
+    color:  #7D529A;
+     transform: scale(0.50); 
 }
 
 
 .input-login::placeholder:focus {
     color:  #7D529A;
-     transform: scale(0.50); 
+     -webkit-transform: scale(0.50);
+             transform: scale(0.50); 
 }
 
 #button-login {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     border: 1px solid #B375B3;
     background-color: rgb(235, 229, 229);
     margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 130px;
     height: 60px;
     border-radius: 3.5px;
@@ -154,21 +220,35 @@ body {
 }
 
 #div-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 500px;
     height: 80px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 18px;
 }
 
 #div-login-successful {
     margin-left: 15px;
     display: none;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 500px;
     height: 50px;
     color: rgb(33, 159, 33);
@@ -178,9 +258,14 @@ body {
 #div-login-failed {
     margin-left: 15px;
     display: none;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 500px;
     height: 50px;
     color: rgb(191, 11, 11);
@@ -198,19 +283,27 @@ body {
 
 #message-failed {
     margin-left: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 #message-successfull {
     margin-left: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 
 .div-registrate {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 35px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 10px;
     font-size: 14px;
 }
