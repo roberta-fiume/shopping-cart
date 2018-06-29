@@ -41,13 +41,22 @@ window.addEventListener("load", function() {
         return valuePassword;
     }
 
-    myForm.onsubmit = function () {
-        storePersonArrayFromForm();
-       var form = document.getElementById('id-form');
-       form.reset();
+//     myForm.onsubmit = function() {
+//        storePersonArrayFromForm();
+//        var form = document.getElementById('id-form');
+//        validateForm();
+//        return false;
+//    };
 
-        return false;  
-   };
+
+  var button = document.getElementById('button');
+  button.addEventListener('click', validateFormOnClickButton);
+
+   function validateFormOnClickButton() {
+        var form = document.getElementById('id-form');
+        storePersonArrayFromForm();
+        validateInputsForm();
+   }
 
    function storePersonArrayFromForm() {
         var personArrayFromStorage = getPersonArrayFromBrowser();
@@ -109,5 +118,32 @@ window.addEventListener("load", function() {
           return  divCheckPass.style.display = "none";
         } else {
             return divCheckPass.innerHTML = "Please, enter a correct password";         }  
+    }
+
+    function validateInputsForm() {
+        form = document.getElementById("id-form").elements;
+        console.log(form);
+        for (var i = 0; i < form.length; i++) {
+            if (form[i].value === "") {
+             return messageFailedRegistration()  ;
+            }
+        } 
+        return messageAccountCreated(); 
+    }
+
+    function messageAccountCreated() {
+        var divAccountCreated = document.getElementById("div-accountCreated");
+        var divAccountFailed = document.getElementById("div-accountFailed");
+        divAccountCreated.style.display = "flex";
+        divAccountFailed.style.display = "none";
+        var form = document.getElementById('id-form');
+        form.reset();
+    }
+
+    function messageFailedRegistration() {
+        var divAccountFailed = document.getElementById("div-accountFailed");
+        var divAccountCreated = document.getElementById("div-accountCreated");
+        divAccountFailed.style.display = "flex";
+        divAccountCreated.style.display = "none";
     }
 });

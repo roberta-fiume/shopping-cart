@@ -137,6 +137,52 @@ body {
     outline: none;
 }
 
+#icon-account-created {
+    width: 40px;
+    height: 50px;
+}
+
+#div-accountCreated {
+    display: none;
+    -webkit-box-pack: row;
+        -ms-flex-pack: row;
+            justify-content: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    width: 300px;
+}
+
+#messageAccountCreated {
+    color: green;
+    font-size: 17px;
+}
+
+#icon-account-failed {
+    width: 50px;
+    height: 50px;
+}
+
+#div-accountFailed {
+    display: none;
+    -webkit-box-pack: row;
+        -ms-flex-pack: row;
+            justify-content: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    width: 300px;
+}
+
+#messageAccountFailed {
+    color: red;
+    font-size: 17px;
+}
+
+
+
 
     /* IPAD MINI Portrait  */
     @media only screen and (min-device-width: 768px) 
@@ -223,7 +269,7 @@ body {
 
         #id-form {
             width: 400px;
-            height: 480px;
+            height: 600px;
         }
 
         #div-h1 {
