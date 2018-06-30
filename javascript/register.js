@@ -56,6 +56,7 @@ window.addEventListener("load", function() {
         var form = document.getElementById('id-form');
         storePersonArrayFromForm();
         validateInputsForm();
+        changeBorderBottomColorToRedOfEmptyInputs();
    }
 
    function storePersonArrayFromForm() {
@@ -122,10 +123,9 @@ window.addEventListener("load", function() {
 
     function validateInputsForm() {
         form = document.getElementById("id-form").elements;
-        console.log(form);
         for (var i = 0; i < form.length; i++) {
             if (form[i].value === "") {
-             return messageFailedRegistration()  ;
+             return messageFailedRegistration();
             }
         } 
         return messageAccountCreated(); 
@@ -144,6 +144,24 @@ window.addEventListener("load", function() {
         var divAccountFailed = document.getElementById("div-accountFailed");
         var divAccountCreated = document.getElementById("div-accountCreated");
         divAccountFailed.style.display = "flex";
-        divAccountCreated.style.display = "none";
+        divAccountCreated.style.display = "none";   
+    }
+
+    function changeBorderBottomColorToRedOfEmptyInputs() {
+        console.log("I work!");
+        var form = document.getElementById('id-form');
+        var inputs = document.getElementsByClassName('input');
+        console.log(inputs);
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].value == "") {
+                inputs[i].style.borderBottom = "1px solid red";
+            } else {
+                inputs[i].style.borderBottom = " 1px solid #B375B3";    
+            }
+        }
+    }
+
+    function changeInputsBorderBottomColorToPurpleOnFocus() {
+
     }
 });
