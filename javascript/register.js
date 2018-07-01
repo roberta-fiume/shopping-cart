@@ -41,13 +41,6 @@ window.addEventListener("load", function() {
         return valuePassword;
     }
 
-//     myForm.onsubmit = function() {
-//        storePersonArrayFromForm();
-//        var form = document.getElementById('id-form');
-//        validateForm();
-//        return false;
-//    };
-
 
   var button = document.getElementById('button');
   button.addEventListener('click', validateFormOnClickButton);
@@ -118,7 +111,7 @@ window.addEventListener("load", function() {
         if (valuePassword.match(passwordPattern)) {
           return  divCheckPass.style.display = "none";
         } else {
-            return divCheckPass.innerHTML = "Please, enter a correct password";         }  
+          return divCheckPass.innerHTML = "Please, enter a correct password";         }  
     }
 
     function validateInputsForm() {
@@ -126,7 +119,7 @@ window.addEventListener("load", function() {
         for (var i = 0; i < form.length; i++) {
             if (form[i].value === "") {
              return messageFailedRegistration();
-            }
+            } 
         } 
         return messageAccountCreated(); 
     }
@@ -136,32 +129,74 @@ window.addEventListener("load", function() {
         var divAccountFailed = document.getElementById("div-accountFailed");
         divAccountCreated.style.display = "flex";
         divAccountFailed.style.display = "none";
-        var form = document.getElementById('id-form');
-        form.reset();
+        // resetForm();
     }
+
+    // function resetForm() {
+    //     var form = document.getElementById('id-form');
+    //     form.reset();
+    //     var inputs = document.getElementsByClassName('input');
+    //     for (var i = 0; i < inputs.length; i++) {
+    //         inputs[i].style.borderBottom = "1px solid #B375B3";
+    //     }
+    // }
 
     function messageFailedRegistration() {
         var divAccountFailed = document.getElementById("div-accountFailed");
-        var divAccountCreated = document.getElementById("div-accountCreated");
+        var divAccountCreated = document.getElementById("div-accountCreated")
         divAccountFailed.style.display = "flex";
-        divAccountCreated.style.display = "none";   
+        divAccountCreated.style.display = "none";
     }
 
     function changeBorderBottomColorToRedOfEmptyInputs() {
-        console.log("I work!");
+        var timeout = null;
         var form = document.getElementById('id-form');
         var inputs = document.getElementsByClassName('input');
-        console.log(inputs);
         for (var i = 0; i < inputs.length; i++) {
             if (inputs[i].value == "") {
                 inputs[i].style.borderBottom = "1px solid red";
+                inputs[i].onkeyup = function(setTypingTime) {    
+                    clearTimeout(timeout);
+                    timeout = setTimeout(function() {
+                        changeInputsBorderBottomColorFromRedToPurpleAfterTyping();
+                      
+                    }, 1000);
+                };
             } else {
-                inputs[i].style.borderBottom = " 1px solid #B375B3";    
+                inputs[i].style.borderBottom = "1px solid #B375B3";
             }
         }
     }
 
-    function changeInputsBorderBottomColorToPurpleOnFocus() {
-
+    function changeInputsBorderBottomColorFromRedToPurpleAfterTyping() {
+        var inputs = document.getElementsByClassName('input');
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].value) {
+               inputs[i].style.borderBottom = "1px solid #B375B3";
+            }
+        }
+        deleteEmptyFieldsMessageIfAllInputsAreFilled();
     }
+
+    function deleteMessageFillEmptyFields() {
+        console.log('I delete the ERROR DIV');
+        var divAccountFailed = document.getElementById("div-accountFailed");
+        divAccountFailed.style.display = "none";
+    }
+
+    function deleteEmptyFieldsMessageIfAllInputsAreFilled() {
+        var inputs = document.getElementsByClassName('input');
+        for (var i = 0; i < inputs.length; i++) { 
+            if (!isInputFieldValid(inputs[i])) {
+               return false;
+            }
+        }
+        deleteMessageFillEmptyFields();
+        return true;
+    }
+
+    function isInputFieldValid(inputField) {
+        return inputField.value && inputField.value != "";
+    }
+
 });
